@@ -1,0 +1,44 @@
+<title>Prosas | Visualizar proposta</title>
+
+<div class="col-lg-12">
+    <h1 class="page-header">Visualizar proposta</h1>
+</div>
+<div class="col-lg-12">
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Nome:</strong>
+    <%= @proposal.name %>
+  </p>
+
+  <p>
+    <strong>Descrição:</strong>
+    <%= @proposal.description %>
+  </p>
+
+  <p>
+    <strong>Valor:</strong>
+    <%= @proposal.value %>
+  </p>
+
+  <p>
+    <strong>Início:</strong>
+    <%= @proposal.start %>
+  </p>
+
+  <p>
+    <strong>Fim:</strong>
+    <%= @proposal.end %>
+  </p>
+
+  <p>
+    <strong>Cidade:</strong>
+    <%= @proposal.city %>
+  </p>
+
+  <div style="margin-top: 50px">
+    <a class="btn btn-primary btn-block" href="<%= edit_proposal_path(@proposal) %>">Editar</a>
+    <a class="btn btn-default btn-block" href="<%= proposals_path %>">Todas as propostas</a>
+  </div>
+</div>
